@@ -146,7 +146,7 @@ REST_FRAMEWORK = {
         "user": "50/minute",
     },
     "DEFAULT_THROTTLE_CLASSES": [
-        "rest_frramework.throttling.AnonRateThrottle",
+        "rest_framework.throttling.AnonRateThrottle",
         "rest_framework.throttling.UserRateThrottle",
     ],
 }

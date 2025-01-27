@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
-urls = [
+urlpatterns = [
     path('', include("djoser.urls")),
     path('menu-items', views.MenuItemView, name='menu-items'),
     path('menu-items/<int:pk>', views.SingleMenuItemView, name='single-menu-item'),
